@@ -11,3 +11,16 @@ C:\Users\Alexey\source\repos\MT4_monitor\obj\Debug\MT4_monitor.csproj.CoreCompil
 C:\Users\Alexey\source\repos\MT4_monitor\obj\Debug\MT4_monitor.csproj.CopyComplete
 C:\Users\Alexey\source\repos\MT4_monitor\obj\Debug\MT4_monitor.exe
 C:\Users\Alexey\source\repos\MT4_monitor\obj\Debug\MT4_monitor.pdb
+D:\___PROJECTS\@VS_projects\MT4_monitor\bin\Debug\MT4_monitor.exe.config
+D:\___PROJECTS\@VS_projects\MT4_monitor\bin\Debug\MT4_monitor.exe
+D:\___PROJECTS\@VS_projects\MT4_monitor\bin\Debug\MT4_monitor.pdb
+D:\___PROJECTS\@VS_projects\MT4_monitor\bin\Debug\MySql.Data.dll
+D:\___PROJECTS\@VS_projects\MT4_monitor\bin\Debug\MySql.Data.xml
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csprojAssemblyReference.cache
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.MT4_monitor.resources
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.Properties.Resources.resources
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.GenerateResource.cache
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CoreCompileInputs.cache
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CopyComplete
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.exe
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.pdb

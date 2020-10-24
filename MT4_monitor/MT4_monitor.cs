@@ -20,7 +20,7 @@ namespace MT4_monitor
 
         private void MT4_monitor_Load(object sender, EventArgs e)
         {
-            
+            LoadTable();
         }
 
         private void buttonRefresh_Click(object sender, EventArgs e)
@@ -40,6 +40,12 @@ namespace MT4_monitor
         }
 
         private void timerForRefresh_Tick(object sender, EventArgs e)
+        {
+            UpdateTable();
+            SendCloseAllSignal();
+        }
+
+        private void buttonReload_Click(object sender, EventArgs e)
         {
             LoadTable();
         }

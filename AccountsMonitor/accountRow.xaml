@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="AccountsMonitor.accountRow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AccountsMonitor"
+             mc:Ignorable="d" 
+             d:DesignHeight="34" d:DesignWidth="565">
+        <StackPanel Orientation="Horizontal" Background="#FF5F5F5F" Margin="0,0,0,5">
+            <Label x:Name="lblOwner" Content="Alexey" Foreground="#FF2CE2B9" Margin="8,0,0,0" FontSize="14" Width="80" HorizontalContentAlignment="Right"/>
+            <Label x:Name="lblAccNo" Content="73535424" Foreground="#FFC7DE37" Margin="8,0,0,0" FontSize="14" Width="75" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label x:Name="lblAccBal" Content="4758.15" Foreground="#FFEC71FF" Margin="8,0,0,0" FontSize="14" Width="70"/>
+            <Label x:Name="lblEURUSD" Content="0" Foreground="White" Margin="16,0,0,0" FontSize="14" Width="60" HorizontalContentAlignment="Center" Background="#FF787878"/>
+            <Label x:Name="lblGBPUSD" Content="0" Foreground="White" FontSize="14" Width="60" HorizontalContentAlignment="Center"/>
+            <Label x:Name="lblGBPJPY" Content="0" Foreground="White" FontSize="14" Width="60" HorizontalContentAlignment="Center" Background="#FF787878"/>
+            <Label x:Name="lblUSDCAD" Content="0" Foreground="White" FontSize="14" Width="60" HorizontalContentAlignment="Center"/>
+            <Label x:Name="lblAUDUSD" Content="0" Foreground="White" FontSize="14" Width="60" HorizontalContentAlignment="Center" Background="#FF787878"/>
+        </StackPanel>
+</UserControl>

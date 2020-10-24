@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FileMultiplier.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SourceFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="Receiver_1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="Receiver_2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="Receiver_3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="Receiver_4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="Receiver_5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="Receiver_6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="Receiver_7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">empty</Value>
+    </Setting>
+    <Setting Name="XAU_1" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="XAU_2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="XAU_3" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="XAU_4" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="XAU_5" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="XAU_6" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="XAU_7" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

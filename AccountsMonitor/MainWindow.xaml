@@ -1,0 +1,32 @@
+﻿<Window x:Class="AccountsMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AccountsMonitor"
+        mc:Ignorable="d"
+        Title="Контроль состояния счетов" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Background="#FF3E3E3E" Loaded="Window_Loaded">
+    <Grid Background="#FF3E3E3E" Margin="5">
+        <Menu Height="21" VerticalAlignment="Top" Background="#FF3E3E3E" Foreground="#FFE4E4E4" FontSize="14" BorderBrush="#FF3E3E3E" Margin="0">
+            <MenuItem Header="Настройки" Click="SettingsWindowOpen_click"/>
+            <MenuItem Header="О программе" Click="About_click"/>
+            <MenuItem x:Name="StartButton" Background="#FF0E9B47" Header="Запустить" Click="StartButton_click"/>
+        </Menu>
+        <StackPanel Orientation="Vertical" Margin="10,29,10,5">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <Label Content="Имя" FontStyle="Italic" Foreground="White" Margin="54,0,0,0"/>
+                <Label Content="Счет №" FontStyle="Italic" Foreground="White" Margin="24,0,0,0"/>
+                <Label Content="Баланс" FontStyle="Italic" Foreground="White" Margin="22,0,0,0"/>
+                <Label Content="EURUSD" FontStyle="Italic" Foreground="White" Margin="26,0,0,0" Width="60" HorizontalContentAlignment="Center" Background="#FF787878"/>
+                <Label Content="GBPUSD" FontStyle="Italic" Foreground="White" Width="60" HorizontalContentAlignment="Center"/>
+                <Label Content="GBPJPY" FontStyle="Italic" Foreground="White" Width="60" HorizontalContentAlignment="Center" Background="#FF787878"/>
+                <Label Content="USDCAD" FontStyle="Italic" Foreground="White" Width="60" HorizontalContentAlignment="Center"/>
+                <Label Content="AUDUSD" FontStyle="Italic" Foreground="White" Width="60" HorizontalContentAlignment="Center" Background="#FF787878"/>
+            </StackPanel>
+            <StackPanel x:Name="accTable">
+                
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

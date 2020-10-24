@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="AccountsMonitor.SetAccount"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AccountsMonitor"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="602" Width="631">
+    <Grid Margin="0,0,0,10">
+        <StackPanel x:Name="accRow" Orientation="Horizontal" Margin="0">
+            <TextBox x:Name="Owner" Width="167" Margin="1,0,0,0"/>
+            <TextBox x:Name="filePath" Width="360" Margin="10,0,0,0"/>
+            <Button x:Name="BrowsePath" Content="Обзор" Margin="10,0,0,0" Width="53" Click="browsePath_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,8 @@
+OrderEventType: PositionCreate
+MasterPositionMagic: 5331852
+Symbol: GOLD
+StopLossPrice: 1924.56
+TakeProfitPrice: 0
+OrderType: ORDER_TYPE_BUY
+Position: 0
+AdvisorExtraData: Risk1Pos=3.000000;

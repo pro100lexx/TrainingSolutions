@@ -116,14 +116,13 @@ namespace MT4_monitor
         private string GetConnectionString()
         {
             MySqlConnectionStringBuilder mysqlCSB = new MySqlConnectionStringBuilder();
-            mysqlCSB.Server = "185.246.65.19";        // IP адрес БД
-            mysqlCSB.Port = 3306;                     // Порт
-            mysqlCSB.Database = "mt_monitor";         // Имя БД
-            mysqlCSB.UserID = "mt_monitor";           // Имя пользователя БД
-            mysqlCSB.Password = "aRXgaOp4UIcXvDDu";   // Пароль пользователя БД
+            mysqlCSB.Server = Properties.Settings.Default.host;        // IP адрес БД
+            mysqlCSB.Port = 3306;                                      // Порт
+            mysqlCSB.Database = Properties.Settings.Default.database;  // Имя БД
+            mysqlCSB.UserID = Properties.Settings.Default.login;       // Имя пользователя БД
+            mysqlCSB.Password = Properties.Settings.Default.pwd;       // Пароль пользователя БД
 
             return mysqlCSB.ConnectionString;
         }
-
     }
 }

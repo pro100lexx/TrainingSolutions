@@ -24,3 +24,4 @@ D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CoreCompile
 D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CopyComplete
 D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.exe
 D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.pdb
+D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.CredentialsEnter.resources

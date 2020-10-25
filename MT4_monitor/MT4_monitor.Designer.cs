@@ -116,7 +116,7 @@
             this.MinimumSize = new System.Drawing.Size(466, 200);
             this.Name = "MT4_monitor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MT4 Monitor";
+            this.Text = "Мониторинг счетов MT4";
             this.Load += new System.EventHandler(this.MT4_monitor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);

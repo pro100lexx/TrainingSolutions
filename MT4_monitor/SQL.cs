@@ -11,6 +11,7 @@ namespace MT4_monitor
 {
     public partial class MT4_monitor : Form
     {
+        //Загружает данные из SQL и перегружает DataGridView полностью
         public void LoadTable()
         {
             MySqlConnection conn = new MySqlConnection(GetConnectionString());
@@ -33,7 +34,8 @@ namespace MT4_monitor
                 conn.Close();
             }
         }
-
+        
+        //Обновляет данные в уже отрисованной таблице
         public void UpdateTable()
         {
             MySqlConnection conn = new MySqlConnection(GetConnectionString());
@@ -80,6 +82,7 @@ namespace MT4_monitor
             }
         }
 
+        //Проверяет чекбоксы и отправляет в БД сигналы закрытия
         public void SendCloseAllSignal()
         {
             for (int i = 0; i < dataGridView.Rows.Count; i++)
@@ -90,15 +93,24 @@ namespace MT4_monitor
 
                     using (MySqlConnection connection = new MySqlConnection(GetConnectionString()))
                     {
-                        //connection.Open();
+                        connection.Open();
                         MySqlCommand command = new MySqlCommand(sqlExpression, connection);
                         command.ExecuteNonQuery();
                     }
-
                     dataGridView.Rows[i].Cells[5].Value = 0;
-                    //dataGridView.Refresh();
+                    dataGridView.RefreshEdit();
                 }
             }
+        }
+
+        //Устанавливает все чекбоксы в положение True
+        public void SetAllCheckBoxesTrue()
+        {
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
+            {
+                dataGridView.Rows[i].Cells[5].Value = 1;
+            }
+            dataGridView.RefreshEdit();
         }
 
         private string GetConnectionString()

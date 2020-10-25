@@ -49,5 +49,10 @@ namespace MT4_monitor
         {
             LoadTable();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SetAllCheckBoxesTrue();
+        }
     }
 }

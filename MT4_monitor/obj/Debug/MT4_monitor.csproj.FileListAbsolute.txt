@@ -25,3 +25,16 @@ D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CopyComplet
 D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.exe
 D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.pdb
 D:\___PROJECTS\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.CredentialsEnter.resources
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\bin\Debug\MT4_monitor.exe.config
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\bin\Debug\MT4_monitor.exe
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\bin\Debug\MT4_monitor.pdb
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\bin\Debug\MySql.Data.xml
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csprojAssemblyReference.cache
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.CredentialsEnter.resources
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.MT4_monitor.resources
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.Properties.Resources.resources
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.GenerateResource.cache
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CoreCompileInputs.cache
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CopyComplete
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.exe
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.pdb

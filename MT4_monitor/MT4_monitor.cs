@@ -25,7 +25,7 @@ namespace MT4_monitor
             ToolTip t2 = new ToolTip();
             t2.SetToolTip(buttonReload, "Полностью перезагружает таблицу из БД");
             ToolTip t3 = new ToolTip();
-            t3.SetToolTip(button2, "Настройки подключения к БД");
+            t3.SetToolTip(buttonDBset, "Настройки подключения к БД");
 
             if (Properties.Settings.Default.host == "")
             {
@@ -62,12 +62,12 @@ namespace MT4_monitor
             LoadTable();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCloseALL_Click(object sender, EventArgs e)
         {
             SetAllCheckBoxesTrue();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonDBset_Click(object sender, EventArgs e)
         {
             CredentialsEnter credentialsEnter = new CredentialsEnter();
             credentialsEnter.ShowDialog();

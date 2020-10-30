@@ -36,8 +36,8 @@
             this.textBoxDB = new System.Windows.Forms.TextBox();
             this.textBoxUser = new System.Windows.Forms.TextBox();
             this.textBoxPwd = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonTestConnect = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -113,26 +113,26 @@
             this.textBoxPwd.TabIndex = 7;
             this.textBoxPwd.UseSystemPasswordChar = true;
             // 
-            // button1
+            // buttonTestConnect
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.Location = new System.Drawing.Point(10, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Тест подключения";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonTestConnect.BackColor = System.Drawing.Color.LightGreen;
+            this.buttonTestConnect.Location = new System.Drawing.Point(10, 114);
+            this.buttonTestConnect.Name = "buttonTestConnect";
+            this.buttonTestConnect.Size = new System.Drawing.Size(121, 23);
+            this.buttonTestConnect.TabIndex = 10;
+            this.buttonTestConnect.Text = "Тест подключения";
+            this.buttonTestConnect.UseVisualStyleBackColor = false;
+            this.buttonTestConnect.Click += new System.EventHandler(this.buttonTestConnect_Click);
             // 
-            // button2
+            // buttonClose
             // 
-            this.button2.Location = new System.Drawing.Point(168, 114);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Закрыть";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonClose.Location = new System.Drawing.Point(168, 114);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(75, 23);
+            this.buttonClose.TabIndex = 11;
+            this.buttonClose.Text = "Закрыть";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // CredentialsEnter
             // 
@@ -142,9 +142,9 @@
             this.ControlBox = false;
             this.Controls.Add(this.textBoxServer);
             this.Controls.Add(this.textBoxPwd);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonTestConnect);
             this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -171,7 +171,7 @@
         private System.Windows.Forms.TextBox textBoxDB;
         private System.Windows.Forms.TextBox textBoxUser;
         private System.Windows.Forms.TextBox textBoxPwd;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonTestConnect;
+        private System.Windows.Forms.Button buttonClose;
     }
 }

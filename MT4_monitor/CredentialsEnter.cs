@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -18,7 +11,27 @@ namespace MT4_monitor
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private string GetConnectionString()
+        {
+            MySqlConnectionStringBuilder mysqlCSB = new MySqlConnectionStringBuilder();
+            mysqlCSB.Server = Properties.Settings.Default.host;        // IP адрес БД
+            mysqlCSB.Port = 3306;                                      // Порт
+            mysqlCSB.Database = Properties.Settings.Default.database;  // Имя БД
+            mysqlCSB.UserID = Properties.Settings.Default.login;       // Имя пользователя БД
+            mysqlCSB.Password = Properties.Settings.Default.pwd;       // Пароль пользователя БД
+
+            return mysqlCSB.ConnectionString;
+        }
+
+        private void CredentialsEnter_Load(object sender, EventArgs e)
+        {
+            textBoxServer.Text = Properties.Settings.Default.host;
+            textBoxDB.Text = Properties.Settings.Default.database;
+            textBoxUser.Text = Properties.Settings.Default.login;
+            textBoxPwd.Text = Properties.Settings.Default.pwd;
+        }
+
+        private void buttonTestConnect_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.host = textBoxServer.Text;
             Properties.Settings.Default.database = textBoxDB.Text;
@@ -43,29 +56,11 @@ namespace MT4_monitor
             }
         }
 
-        private string GetConnectionString()
+        private void buttonClose_Click(object sender, EventArgs e)
         {
-            MySqlConnectionStringBuilder mysqlCSB = new MySqlConnectionStringBuilder();
-            mysqlCSB.Server = Properties.Settings.Default.host;        // IP адрес БД
-            mysqlCSB.Port = 3306;                                      // Порт
-            mysqlCSB.Database = Properties.Settings.Default.database;  // Имя БД
-            mysqlCSB.UserID = Properties.Settings.Default.login;       // Имя пользователя БД
-            mysqlCSB.Password = Properties.Settings.Default.pwd;       // Пароль пользователя БД
-
-            return mysqlCSB.ConnectionString;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void CredentialsEnter_Load(object sender, EventArgs e)
-        {
-            textBoxServer.Text = Properties.Settings.Default.host;
-            textBoxDB.Text = Properties.Settings.Default.database;
-            textBoxUser.Text = Properties.Settings.Default.login;
-            textBoxPwd.Text = Properties.Settings.Default.pwd;
+            Close();
         }
     }
 }
+
+

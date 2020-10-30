@@ -33,8 +33,8 @@
             this.timerForRefresh = new System.Windows.Forms.Timer(this.components);
             this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonReload = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonCloseALL = new System.Windows.Forms.Button();
+            this.buttonDBset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,34 +80,34 @@
             this.buttonReload.UseVisualStyleBackColor = true;
             this.buttonReload.Click += new System.EventHandler(this.buttonReload_Click);
             // 
-            // button1
+            // buttonCloseALL
             // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Location = new System.Drawing.Point(363, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "CLOSEALL";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonCloseALL.BackColor = System.Drawing.Color.Tomato;
+            this.buttonCloseALL.Location = new System.Drawing.Point(363, 12);
+            this.buttonCloseALL.Name = "buttonCloseALL";
+            this.buttonCloseALL.Size = new System.Drawing.Size(75, 23);
+            this.buttonCloseALL.TabIndex = 3;
+            this.buttonCloseALL.Text = "CLOSEALL";
+            this.buttonCloseALL.UseVisualStyleBackColor = false;
+            this.buttonCloseALL.Click += new System.EventHandler(this.buttonCloseALL_Click);
             // 
-            // button2
+            // buttonDBset
             // 
-            this.button2.Location = new System.Drawing.Point(144, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(34, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "БД";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonDBset.Location = new System.Drawing.Point(144, 12);
+            this.buttonDBset.Name = "buttonDBset";
+            this.buttonDBset.Size = new System.Drawing.Size(34, 23);
+            this.buttonDBset.TabIndex = 4;
+            this.buttonDBset.Text = "БД";
+            this.buttonDBset.UseVisualStyleBackColor = true;
+            this.buttonDBset.Click += new System.EventHandler(this.buttonDBset_Click);
             // 
             // MT4_monitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 161);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonDBset);
+            this.Controls.Add(this.buttonCloseALL);
             this.Controls.Add(this.buttonReload);
             this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.dataGridView);
@@ -129,8 +129,8 @@
         private System.Windows.Forms.Timer timerForRefresh;
         private System.Windows.Forms.Button buttonRefresh;
         private System.Windows.Forms.Button buttonReload;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonCloseALL;
+        private System.Windows.Forms.Button buttonDBset;
     }
 }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
@@ -73,9 +74,9 @@ namespace MT4_monitor
                         dataGridView.Rows[i].Cells[4].Style.BackColor = System.Drawing.Color.PaleGreen;
                 }
             }
-            catch (Exception ex)
+            catch //(Exception ex)
             {
-                Text = "Connection failed!";
+                //Text = "Connection failed!";
                 //MessageBox.Show(ex.Message);
                 //Мониторинг счетов MT4
             }
@@ -94,12 +95,17 @@ namespace MT4_monitor
                 {
                     string sqlExpression = String.Format("UPDATE accounts SET close = True WHERE account = {0}", dataGridView.Rows[i].Cells[0].Value);
 
-                    using (MySqlConnection connection = new MySqlConnection(GetConnectionString()))
+                    //Если счет в данный момент онлайн - отправляем на него закрытие
+                    if (dataGridView.Rows[i].Cells[4].Style.BackColor == System.Drawing.Color.PaleGreen)
                     {
-                        connection.Open();
-                        MySqlCommand command = new MySqlCommand(sqlExpression, connection);
-                        command.ExecuteNonQuery();
+                        using (MySqlConnection connection = new MySqlConnection(GetConnectionString()))
+                        {
+                            connection.Open();
+                            MySqlCommand command = new MySqlCommand(sqlExpression, connection);
+                            command.ExecuteNonQuery();
+                        }
                     }
+                    
                     dataGridView.Rows[i].Cells[5].Value = 0;
                     dataGridView.RefreshEdit();
                 }
@@ -126,6 +132,24 @@ namespace MT4_monitor
             mysqlCSB.Password = Properties.Settings.Default.pwd;       // Пароль пользователя БД
 
             return mysqlCSB.ConnectionString;
+        }
+
+        public bool CheckForInternetConnection()
+        {
+            try
+            {
+                Ping myPing = new Ping();
+                string host = "google.com";
+                byte[] buffer = new byte[32];
+                int timeout = 100;
+                PingOptions pingOptions = new PingOptions();
+                PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
+                return (reply.Status == IPStatus.Success);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }

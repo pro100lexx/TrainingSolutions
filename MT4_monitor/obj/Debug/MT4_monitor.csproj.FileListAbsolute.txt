@@ -38,3 +38,5 @@ D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.Co
 D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.csproj.CopyComplete
 D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.exe
 D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\obj\Debug\MT4_monitor.pdb
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\bin\Debug\Devart.Data.dll
+D:\@Ya.Disc\@MyProjects\@VS_projects\MT4_monitor\bin\Debug\Devart.Data.MySql.dll

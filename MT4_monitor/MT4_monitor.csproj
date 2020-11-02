@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.2551.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <HintPath>packages\dotConnect.Express.for.MySQL.8.18.1759\lib\Devart.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Devart.Data.MySql, Version=8.18.1759.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL">
+      <HintPath>packages\dotConnect.Express.for.MySQL.8.18.1759\lib\Devart.Data.MySql.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data">
       <HintPath>D:\___Programs\MqlSqlDemo\packages\MySql.Data.dll</HintPath>
     </Reference>
@@ -81,6 +87,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -41,24 +42,51 @@ namespace MT4_monitor
 
             MySqlConnection conn = new MySqlConnection(GetConnectionString());
 
-            try
+            if (CheckForInternetConnection())
             {
-                conn.Open();
-                MessageBox.Show("Соединение успешно установлено.\nДанные для подключения сохранены.\nОкно с настройками можно закрыть.");
+                try
+                {
+                    conn.Open();
+                    MessageBox.Show("Соединение успешно установлено.\nДанные для подключения сохранены.\nОкно с настройками можно закрыть.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Интернет подключение отсутствует");
             }
-            finally
-            {
-                conn.Close();
-            }
+
+            
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        public bool CheckForInternetConnection()
+        {
+            try
+            {
+                Ping myPing = new Ping();
+                string host = "google.com";
+                byte[] buffer = new byte[32];
+                int timeout = 100;
+                PingOptions pingOptions = new PingOptions();
+                PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
+                return (reply.Status == IPStatus.Success);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
     }
 }
